@@ -4,8 +4,17 @@
 */
 
 interface KeyValuePair {
-  key;
-  value;
+  [key: string| number|symbol] : any;
+};
+
+let one: KeyValuePair = {
+  name: 'Mary',
+  age: 25,
+};
+
+let two: KeyValuePair = {
+  weight: 24,
+  password: 'anagramma',
 }
 
 export {};
